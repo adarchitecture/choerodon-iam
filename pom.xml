@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.choerodon</groupId>
         <artifactId>choerodon-framework-parent</artifactId>
-        <version>0.18.0.RELEASE</version>
+        <version>0.18.0-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -130,11 +130,10 @@
             <version>1.4.197</version>
             <scope>test</scope>
         </dependency>
-        <!--初始化数据库表-->
         <dependency>
             <groupId>io.choerodon</groupId>
             <artifactId>choerodon-liquibase</artifactId>
-            <version>0.15.2.RELEASE</version>
+            <version>0.15.1.RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

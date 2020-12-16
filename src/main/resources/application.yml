@@ -13,12 +13,12 @@ spring:
       # 等待连接池分配连接的最大时长（毫秒）
       connection-timeout: ${SPRING_DATASOURCE_CONNECTION_TIMEOUT:30000}
   redis:
-    host: ${SPRING_REDIS_HOST:redis.hzero.org}
+    host: ${SPRING_REDIS_HOST:127.0.0.1}
     port: ${SPRING_REDIS_PORT:6379}
     database: ${SPRING_REDIS_DATABASE:1}
     jedis:
       pool:
-        # 资源池中最大连接数
+        # 资源池中最大连接
         # 默认8，-1表示无限制；可根据服务并发redis情况及服务端的支持上限调整
         max-active: ${SPRING_REDIS_POOL_MAX_ACTIVE:50}
         # 资源池运行最大空闲的连接数
